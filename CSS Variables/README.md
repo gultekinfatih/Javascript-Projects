@@ -1,4 +1,4 @@
-# JS and CSS Clock
+# CSS Variables
 
 Demo: https://css-variables-withjs.netlify.app/
 
