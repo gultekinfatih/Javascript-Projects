@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #313131;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  border: 1px solid black;
+  box-shadow: -3px 2px 9px 6px black;
+  cursor: crosshair;
+}
+
+.clearOptions {
+  cursor: pointer;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.erase,
+.clear {
+  width: 80px;
+  height: 50px;
+  border: 1px solid white;
+  margin-left: 2rem;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-radius: 50px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.section .tools .color-field {
+  height: 40px;
+  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid white;
+  align-self: center;
+  margin: 0 10px;
+}
+
+.color-picker {
+  align-self: center;
+  margin: 0 10px;
+  height: 50px;
+}
+
+.pen-range {
+  align-self: center;
+  margin: 0 15px;
+}
+
+#ornek {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+* {
+  user-select: none;
+}

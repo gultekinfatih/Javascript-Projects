@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint App With Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="field">
+      <canvas id="canvas" width="1200" height="600"></canvas>
+      <div class="section">
+        <div class="tools" id="colorsAndWith">
+          <div
+            onclick="change_color(this)"
+            class="color-field"
+            style="background: red"
+          ></div>
+          <div
+            onclick="change_color(this)"
+            class="color-field"
+            style="background: blue"
+          ></div>
+          <div
+            onclick="change_color(this)"
+            class="color-field"
+            style="background: green"
+          ></div>
+          <div
+            onclick="change_color(this)"
+            class="color-field"
+            style="background: yellow"
+          ></div>
+
+          <input
+            oninput="drawColor = this.value"
+            type="color"
+            class="color-picker"
+          />
+          <input
+            oninput="drawWidth = this.value"
+            type="range"
+            min="1"
+            max="50"
+            class="pen-range"
+          />
+        </div>
+        <div class="clearOptions">
+          <div class="erase">Erase</div>
+          <div class="clear" onclick="cleaner()" style="background-color: #fff">
+            Clear
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
